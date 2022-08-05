@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Poppins:wght@100;300&family=Roboto:ital,wght@0,100;0,300;0,500;0,900;1,100;1,300;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --color--primary:red;
+    --color--balck:#000;
+    --logo--color:#fff;
+    --text--transform:uppercase;
+    --button-padding: .5rem 1.5rem;
+
+}
+img{
+    width: 100%;
+}
+
+h1{
+
+}
+
+h2{
+
+}
+h3{
+
+    font-size: 2rem;
+    font-weight: 700;
+}
+h4{
+
+}
+
+
+/* header section start*/
+
+.container{
+    width: 100%;
+
+
+}
+nav .container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: var(--color--balck) ;
+    padding: 2rem 0rem;
+    margin: 0 auto;
+}
+.logo h3{
+    color: var(--logo--color);
+    text-transform: var(--text--transform);
+}
+.logo .text-sub{
+    text-transform: var(--text--transform);
+    color: var(--color--primary);
+}
+.container .menu{
+
+}
+.container .menu ul li {
+    display: inline-block;
+    padding: .5rem;
+}
+.container .menu ul li a{
+    font-family: 'Poppins', sans-serif;
+    color: var(--logo--color);
+    text-transform: var(--text--transform);
+}
+.container .menu ul li a:active{
+    color: var(--color--primary);
+}
+
+
+.announce{
+    padding: 1rem 0rem;
+    background: var(--color--primary);
+    text-align: center;
+}
+.announce .announcement-text{
+    color: var(--logo--color);
+}
+.announce .text-free{
+    color: var(--color--balck);
+    text-transform: var(--text--transform);
+    font-weight: 700;
+}
+.announcement-text .platinum{
+    text-transform: var(--text--transform);
+    color: var(--color--balck);
+    font-weight: 700;
+}
+
+/* header section end*/
+
+/* hero section start*/
+.hero-section{
+    background-image: url("../images/1.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center !important;
+}
+.hero-section .hero-text{
+    padding: 3rem 0rem 0rem 8rem;
+
+}
+
+
+.shop-now{
+    padding: var(--button-padding);
+    background: deeppink;
+    display: inline-block;
+    color: var(--logo--color);
+    text-transform: var(--text--transform);
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--color--primary);
+}
+.hero-text a:hover{
+    background: gray;
+}
+.hero-text p{
+    text-align: justify;
+    width: 500px;
+    line-height: 1.5rem;
+
+}
+.hero-text h2{
+    position: relative;
+}
+.hero-text h2:after{
+    content: '';
+    position: absolute;
+    top: 2rem;
+    bottom:0;
+    width: 400px;
+    height: 3px;
+    left: 0;
+    background: crimson;
+}
+
+/* hero section start*/
+
+
+/* collection-section start*/
+.collection-section{
+    padding: 5rem 0rem;
+}
+
+
+.subscriber-section{
+    width: 80%;
+    margin: 0 auto;
+    background: crimson;
+
+    padding: 40px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 10px;
+
+}
+.subscriber-section >div p{
+    color: var(--logo--color);
+    text-transform: capitalize;
+    font-weight: 600;
+
+}
+.collection-item{
+
+    padding: 30px 0px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.collection-header{
+    margin-top: 40px;
+}
+.collection-header h3{
+    margin-left: 9rem;
+    font-weight: 700;
+    font-size: 30px;
+
+}
+.collection-item1 h4{
+    color: crimson;
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+/* collection-section end*/
+
+/* about start*/
+
+.about{
+   display: flex;
+    justify-content: space-evenly;
+    justify-items: center;
+
+
+}
+.about-right{
+    margin: 100px 0px 0px 20px;
+
+}
+.about-right p{
+    text-align: justify;
+    width: 600px;
+}
+.about-img-left{
+
+
+}
+.about-img-left img
+{
+    margin-left: 100px;
+    height: 400px;
+    width: 500px;
+}
+
+
+/* about end*/
+
+/* browse-section start */
+
+.browse-section{
+    padding: 60px 0px;
+}
+.browse-header{
+    padding: 20px 0px;
+}
+.browse-header h3{
+    margin-left: 80px;
+
+}
+
+.browse-item-container{
+    display: flex;
+    justify-content: space-evenly;
+   align-items: center;
+    margin-bottom: 30px;
+}
+
+.browse-item1{
+    height: 550px;
+    width: 300px;
+    box-shadow: 5px 5px 10px #f1f1f1, -5px -5px 10px #f1f1f1  ;
+    border-radius: 10px;
+    text-align: center;
+
+}
+.card-img img{
+    height: 200px;
+    width: 270px;
+    margin: 10px 0px;
+    border-radius: 10px;
+}
+.card-description{
+    text-align: justify;
+    padding: 20px;
+}
+.card-btn{
+    padding: var(--button-padding);
+    border: 2px solid #000000;
+    color: #000000;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.browse-item1 a:hover{
+    background: crimson;
+    color: #f1f1f1;
+}
+
+
+/* browse-section end */
+
+
+/* contact section start*/
+.contact-section{
+    padding: 40px 0px;
+}
+.contact{
+    display: flex;
+    justify-content: space-evenly;
+}
+.contact p{
+    text-align: justify;
+    width: 600px;
+
+}
+.contact .contact-btn{
+    padding: var(--button-padding);
+    border: 2px solid #000000;
+    color: black;
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.contact-img img{
+    height: 500px;
+    width: 400px;
+}
+
+/* contact section end*/
+
+/* sign up section start*/
+.sign-up-section{
+    padding: 40px 0px;
+}
+
+.signup{
+    padding: 40px 0px;
+    width: 80%;
+    background: crimson;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10px;
+}
+.signup h3{
+    margin: 5px 0px;
+}
+.signup input{
+    padding: 8px 20px;
+    width: 40%;
+    border-radius: 5px;
+}
+.signup button{
+    padding: var(--button-padding);
+    cursor: pointer;
+    text-transform: uppercase;
+    background: #000000;
+    color: #f1f1f1;
+    margin-left: 10px;
+    border-radius: 5px;
+
+
+}
+
+/* sign up section end*/
+
+
+.footer{
+    padding: 50px 0px;
+    background: #000000;
+    text-align: center;
+
+}
+.footer h3{
+    text-transform: uppercase;
+    color: #f1f1f1;
+    font-weight: 700;
+    font-size: 30px;
+}
+.footer h3 span{
+    color: crimson;
+}
+.footer p{
+    color: #f1f1f1;
+}
+.footer .fa-facebook-f,
+.footer .fa-square-instagram
+{
+   color: white;
+    padding: 10px;
+    font-size: 20px;
+
+}
